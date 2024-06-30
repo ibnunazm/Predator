@@ -12,6 +12,8 @@ import {
 } from "react-icons/io";
 import Dropdown from "@/components/dropdown";
 
+import Image from "next/image";
+
 import routes from "@/data/routes";
 import { useSidebarContext } from "@/providers/SidebarProvider";
 import { useThemeContext } from "@/providers/ThemeProvider";
@@ -173,8 +175,9 @@ const Navbar = ({ }: Props) => {
         {/* Profile & Dropdown */}
         <Dropdown
           button={
-            <img
-              className="h-10 w-10 rounded-full cursor-pointer"
+            <Image
+              width={10}
+              height={10}
               src={'/img/avatars/avatar4.png'}
               alt="Elon Musk"
             />

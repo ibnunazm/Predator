@@ -4,6 +4,7 @@ import {
   MdOutlineShoppingCart,
   MdBarChart,
   MdPerson,
+  MdForum,
 } from "react-icons/md";
 
 const routes = [
@@ -31,6 +32,12 @@ const routes = [
     layout: "/dashboard",
     path: "profile",
     icon: <MdPerson className="h-6 w-6" />,
+  },
+  {
+    name: "forms",
+    layout: "/forms",
+    path: "forms",
+    icon: <MdForum className="h-6 w-6" />,
   },
   {
     name: "RTL Admin",

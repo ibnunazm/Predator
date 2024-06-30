@@ -27,7 +27,8 @@ export function SidebarLinks({ onClickRoute }: Props) {
       if (
         route.layout === "/dashboard" ||
         route.layout === "/auth" ||
-        route.layout === "/rtl"
+        route.layout === "/rtl" ||
+        route.layout === "/forms"
       ) {
         return (
           // <Link key={index} href={route.layout + "/" + route.path}>
